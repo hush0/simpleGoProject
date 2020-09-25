@@ -23,7 +23,7 @@ func TestDBConnect(t *testing.T) {
 
 	fmt.Println("this is a functional testing !")
 	var err error
-	db, err = gorm.Open("mysql", "ads:Welcome2sohu!@tcp(10.16.39.93:3306)/decontroler_dev?charset=utf8&parseTime=True&loc=Local")
+	db, err = gorm.Open("mysql", "ads:Welcome2hush!@tcp(10.16.39.93:3306)/decontroler_dev?charset=utf8&parseTime=True&loc=Local")
 	db.DB().SetMaxIdleConns(5)
 	db.DB().SetMaxOpenConns(10)
 	if err != nil {
